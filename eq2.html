@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>equest2</title>
+	<link rel="stylesheet" type="text/css" href="eq2.css">
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/34c7f4342f.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+		<div class="container-fluid">
+	    <div  id="quest" class="row">
+		<div class="col-6">
+		<h1 class="h1"><span style="font-family: 'Akronim', cursive;">e</span><strong>Quest</strong></h1></div>
+		
+		<div class="col-6 user" ><span><i class="fas fa-user-alt" id="user"></i></span><span class="myacc">My Account</span><span><a href="#"><i class="fas fa-caret-down" id="caret"></i></a></span></div>
+      
+        </div>
+    </div>
+</header>
+
+<article id="article">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4">
+		<h6><a class="manage" href="#" id="manage"><strong>Account Manager-NYC</strong></a></h6>
+	            </div>
+                <div class="col-5"> <p id="p">Requisition:4567800</p></div>
+                <div class="col-3" id="orderSummary">
+                	<div class="whiteBoard">
+                	<div class="row">
+                	<div class="col-7"><p>order summary</p></div>
+                	<div class="col-4" id="Expand" ><a id="expand" href="#">Expand</a></div>
+                  <div class="col-1"></div>
+                </div>
+                <div class="row">
+                	<div class="col-6" id="sel">
+                		<p>5 selected</p>
+                </div>
+                <div class="col-6"><p id="rate">$456</p></div>
+            </div>
+                </div>
+	</div></div>
+           <div class="row" >
+           	<div class="col-10" id="arrowBoard">
+
+           	<span id="opac"><a  href="#"> <i  class="fas fa-bars"></i> Job details    ></a></span>
+           	<span id="opac"><a href="#"> <i class="fas fa-location-arrow"></i> Select destination </a></span>
+           	<span id="opac"><a href="#"><i class="fas fa-bars"></i> Board specific Data</a></span>
+           	<span id="opac"><a href="#"> <i class="far fa-eye"></i> Job preview</a></span>
+           	<span id="opac"><a href="#"><i class="far fa-credit-card"></i> Payment details</a></span>
+           	<span id="opac"><a href="#"><i class="far fa-check-circle"></i> Payment Confirmation</a></span>
+           	<span ><a class="next" href="#">next <i id="arrow" class="fas fa-arrow-right"></i></a></span>
+           </div>
+     
+      <div class="col-2"></div>  
+       </div></div>
+</article>
+<aside>
+	</aside>
+	<!-- main column-->
+<nav>
+	<div class="container-fluid">
+		<div class="row">
+			<!--left column -->
+			<div class="col-2">
+        <br>
+        <div class="row">
+          <div id="filter" class="col-8"><a><strong>Filters</strong></a></div>
+          <div class="col-4" id="close">Close</div>
+        </div>
+        <br>
+        <div class="row" id="range">
+
+        <h6 style=" padding-bottom: 15px;margin-left: -3px;font-size: 12px;"><strong>price</strong></h6>
+       
+        <input type="range" class="range" id="range" >
+
+      </div>
+			
+        <hr>
+        <h6 id="pr-headings"><strong>BOARD TYPE</strong></h6>
+        <div class="checkLst">
+        <form>
+        	<input type="checkbox" name="collegeboard" id="collegeboard"><label for="collegeboard">college board</label><br>
+        	<input type="checkbox" name="careerboard" id="careerboard"><label for="collegeboard">career board</label><br>
+        	<input type="checkbox" name="socialboard" id="socialboard"><label for="collegeboard">social board</label><br>
+        	<input type="checkbox" name="promotedboard" id="collegeboard"><label for="promotedboard">promoted board</label>
+        </form>
+        <hr>
+        
+        <h6 id="pr-headings" ><strong>USERS</strong></h6>
+        <form>
+        	<input type="checkbox" name="lessthan" id="lessthan"><label for="lessthan">less than 500</label><br>
+        	<input type="checkbox" name="fivehun" id="fivehun"><label for="fivehun">500 - 1000</label><br>
+        	<input type="checkbox" name="thous" id="thous"><label for="thous">1000-2000</label><br>
+        
+        </form>
+        <hr>
+        <h6 id="pr-headings"><strong>GROUPS</strong></h6>
+        <form>
+        	<input type="checkbox" name="kariz" id="kariz"><label for="collegeboard">Kariz favourites</label><br>
+        	<input type="checkbox" name="john" id="john"><label for="collegeboard">john's favourite</label><br>
+        	<input type="checkbox" name="meghna" id="meghna"><label for="collegeboard">meghna's Group</label>
+        </form>
+        <br><br>
+        <p>Add new group</p>
+        <hr>
+
+        </div>
+      
+			</div>
+			<!-- middle column -->
+			<div id="middleCol" class="col-8">
+				<!-- 1st row -->
+				<div class="row searchbox">
+					<div class="col-6">
+				 <div class="search-container">
+    <form  action="/action_page.php">
+      <input type="text" placeholder="     search by board                      &#xF002;" style="font-family:Arial, FontAwesome; width: 72%;height: 36px;border:1px;opacity: 0.8"/>
+    <!--  <a href="#"><i class="fa fa-search"></i></a>-->
+    </form>
+  </div>
+
+			</div>
+           <div class="col-6" id="reset">Reset</div>
+		</div>
+		<br>
+             <!-- 2nd row -->
+             <div style="line-height: 0px;">
+             <h6 style="color: black;font-size: 20px;font-family: 'Noto Sans', sans-serif;opacity: 0.9;"><strong>Repost to Job Board</strong></h6>
+			 <p class="text-muted">*select to repost on join board</p>
+			</div>
+       <br>
+		<div class="row">
+
+			<div class="col-4">
+
+				<a id="clik" href="#" onclick="selected()">
+          <div class="card" style="width: 16rem;"> 
+            <i id="checkmark" class="fas fa-check-circle"></i> 
+  <div class="card-body" style="border:2px solid #0C9BCC;border-radius: 1px;">
+  
+    <h5 class="card-title"><img class="career" src="images/career.png"></h5>
+
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a  class="card-link" id="alignRight "><strong>$56.00 </strong><span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div></a>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="images/snagajob.png" class="snaga"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a  class="card-link"><strong>$56.00</strong> <span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="images/indeed.png" class="indeed"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a  class="card-link"><strong>$56.00 </strong><span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+
+			</div>
+		</div>
+		<br><br/>
+		<!-- 3rd row -->
+		<div style="line-height: 11px">
+          <h6 style="color: black;font-size: 21px;font-family: 'Noto Sans', sans-serif;opacity: 0.9;"><strong>Select New  Destination</strong></h6>
+			 <p class="text-muted">*Select board to post to additional job board </p>
+         <br><br>
+
+		<div class="row">
+
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+           <i id="checkmark" class="fas fa-check-circle"></i> 
+  <div class="card-body" style="border:2px solid #0C9BCC;border-radius: 1px;">
+    <h5 class="card-title"><img src="images/j2c.png" class="indeed"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a  class="card-link"> <strong>$56.00 </strong><span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="images/craigslist.png" class="indeed"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a class="card-link"><strong>$56</strong> <span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+           <i id="checkmark" class="fas fa-check-circle"></i> 
+  <div class="card-body" style="border:2px solid #0C9BCC;border-radius: 1px;">
+    <h5 class="card-title"><img src="images/dice.png" class="indeed"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+     <a  class="card-link"><strong>$56.00</strong> <span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+
+			</div>
+
+		</div>
+		<br>
+
+		<div class="row">
+
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+           <i id="checkmark" class="fas fa-check-circle"></i> 
+  <div class="card-body" style="border:2px solid #0C9BCC;border-radius: 1px;">
+    <h5 class="card-title"><img src="images/nexxt.png" class="nxt"></h5>
+    <a href="#" class="card-link" id="slots">6slots</a>
+    <a  class="card-link"><strong>$56.00 </strong><span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="images/snagajob.png" class="snaga"></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+    <a  class="card-link"><strong>$56.00</strong> <span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <h5 class="card-title" ><img src="images/indeed.png" class="indeed" ></h5>
+    <a href="#" class="card-link" id="slots">6 slots</a>
+     <a  class="card-link"><strong>$56.00</strong> <span class="text-muted" id="overline">$75.00</span></a>
+  </div>
+</div>
+
+			</div>
+
+		</div>
+</div></div>
+
+			
+		
+
+    <!-- right column -->
+		<div class="col-2" id="rateboard" style="font-size: 14px;">
+			<div class="row" style="padding-top: 14px;">
+				<div class="col-8" id="alighLeft"><p>Career Builder</p></div>
+				<div class="col-4" id="alignRight"><p><strong>$56</strong></p></div>
+			</div>
+      <br>
+           <h4 id="jobboard"><strong>New Job Boards</strong></h4>
+			<div class="row">
+				<div class="col-8" id="alighLeft"><p>College Recruiter</p></div>
+				<div class="col-4" id="client"><a href="#" style="color:green;font-size: 13px;margin-left: -10px;"><strong>client contract</strong></a></div>
+			</div>
+
+			<div class="row">
+				<div class="col-8" id="alighLeft"><p>Dice</p></div>
+				<div class="col-4" id="alignRight"><p><strong>$56</strong></p></div>
+			</div>
+
+			<div class="row">
+				<div class="col-8" id="alighLeft"><p>Nexxt</p></div>
+				<div class="col-4" id="alignRight"><p><strong>$56</strong></p></div>
+			</div>
+			<br><br><br>
+			<div class="bg">
+        <div id="calculatedAmount">
+			<div class="row">
+				<div class="col-8" id="total"><p>Sub Total</p></div>
+				<div class="col-4" id="alignRight"><p>$168</p></div>
+			</div>
+
+			<div class="row">
+				<div class="col-8" id="total"><p>Discount Total</p></div>
+				<div class="col-4" id="alignRight"><p>$40</p></div>
+			</div></div>
+			<div  id="totalAmount" class="row">
+				<div class="col-8" id="total"><p><strong>Order Total</strong></p></div>
+				<div class="col-4" id="alignRight"><p><strong>$128</strong></p></div>
+			</div>
+		</div>
+		</div>
+		<!--right col ends -->
+	</div></div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
